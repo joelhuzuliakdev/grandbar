@@ -9,74 +9,67 @@ const categories = [
 		label: 'Espirituosas',
 		brands: [
 		{
-			name: 'DIAGEO',
 			products: [
-			{ name: 'Smirnoff Vodka', detail: 'x44 u.', price: 7443, promo: 'Por volumen: 5+1 cj · $6833', variants: [{ label: 'Sabores', price: 8200 }] },
-			{ name: 'Tanqueray Gin', detail: 'x42 u.', price: 25333, variants: [{ label: 'Sabores', price: 30416 }] },
-			{ name: "Baileys", detail: 'x42 u.', price: 26846 },
-			{ name: 'White Horse Whisky', detail: 'x42 u.', price: 14664 },
-			{ name: 'Johnnie Walker Red', detail: 'x42 u.', price: 26904 },
-			{ name: 'Johnnie Walker Black', detail: 'x42 u.', price: 48928 },
-			{ name: 'Johnnie Walker Double Black', detail: 'x42 u.', price: 55706 },
-			{ name: 'Johnnie Walker Gold', detail: 'x42 u.', price: 94768 },
+			{ name: 'Smirnoff Vodka', image:'/bebidas/smirnoffVodka.webp', detail: 'x44 u.', price: 7443, promo: 'Por volumen: 5+1 cj · $6833', variants: [{ label: 'Sabores', price: 8200 }] },
+			{ name: 'Tanqueray Gin', image:'/bebidas/tanquerayGin.webp', detail: 'x42 u.', price: 25333, variants: [{ label: 'Sabores', price: 30416 }] },
+			{ name: "Baileys", image:'/bebidas/baileys.webp', detail: 'x42 u.', price: 26846 },
+			{ name: 'White Horse Whisky', image:'/bebidas/whiteHorseWhisky.webp', detail: 'x42 u.', price: 14664 },
+			{ name: 'Johnnie Walker Red', image:'/bebidas/johnnieWalkerRed.webp', detail: 'x42 u.', price: 26904 },
+			{ name: 'Johnnie Walker Black', image:'/bebidas/johnnieWalkerBlack.webp', detail: 'x42 u.', price: 48928 },
+			{ name: 'Johnnie Walker Double Black', image:'/bebidas/johnnieWalkerDoubleBlack.webp', detail: 'x42 u.', price: 55706 },
+			{ name: 'Johnnie Walker Gold', image:'/bebidas/johnnieWalkerGold.webp', detail: 'x42 u.', price: 94768 },
 			]
 		},
 		{
-			name: 'CAMPARI',
 			products: [
-			{ name: 'Skyy Saborizado', price: 8916 },
-			{ name: 'Skyy Neutro', detail: 'x25 u.', price: 5926, promo: 'Promo 5+1' },
-			{ name: 'Campari', detail: 'x25 u.', price: 8434, promo: 'Promo 5+1' },
-			{ name: 'Aperol', detail: 'x25 u.', price: 8434, promo: 'Promo 5+1' },
-			{ name: 'Cinzano', detail: 'x25 u.', price: 7131 },
+			{ name: 'Skyy Saborizado', image:'/bebidas/skyySaborizado.webp', price: 8916 },
+			{ name: 'Skyy Neutro', image:'/bebidas/skyyNeutro.webp', detail: 'x25 u.', price: 5926, promo: 'Promo 5+1' },
+			{ name: 'Campari', image:'/bebidas/campari.webp', detail: 'x25 u.', price: 8434, promo: 'Promo 5+1' },
+			{ name: 'Aperol', image:'/bebidas/aperol.webp', detail: 'x25 u.', price: 8434, promo: 'Promo 5+1' },
+			{ name: 'Cinzano', image:'/bebidas/cinzano.webp', detail: 'x25 u.', price: 7131 },
 			]
 		},
 		{
-			name: 'PERNOD RICARD',
-			note: 'x35 u.',
 			products: [
-			{ name: 'Beefeater Dry Gin', price: 19569, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 23262 }] },
-			{ name: 'Blenders x750cc', detail: 'x45 u.', price: 8724 },
-			{ name: 'Cusenier Licores', detail: 'x45 u.', price: 5844, variants: [{ label: 'Café al Cognac', price: 6475 }] },
-			{ name: 'Tía María', detail: 'x45 u.', price: 6929, variants: [{ label: 'Cremy', price: 9773 }] },
-			{ name: 'Buhero Negro', price: 6634 },
-			{ name: 'Buhero Negro Mandelo', price: 7297 },
-			{ name: 'Wyborowa Vodka', price: 4850, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 50621 }] },
-			{ name: 'Brighton Gin', price: 7617, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 8368 }] },
-			{ name: 'Malibú', price: 12517, promo: 'Promo 5+1' },
-			{ name: 'Habana Ron 3 Años', price: 11594, promo: 'Promo 5+1', variants: [{ label: 'Añejo Especial', price: 12378 }] },
-			{ name: 'Ramazzotti', price: 6511, promo: 'Promo 5+1' },
-			{ name: 'Jameson Whisky', detail: 'x44 u.', price: 29825, variants: [{ label: 'Black Barrel', price: 50338 }, { label: 'IPA', price: 33967 }] },
-			{ name: 'Ballantines Whisky', detail: 'x44 u.', price: 26924 },
-			{ name: 'Chivas 12 Años', price: 47414 },
-			{ name: 'Monkey Gin', detail: 'x44 u.', price: 59195 },
-			{ name: 'The Glenlivet Reserve', detail: 'x41 u.', price: 50004 },
-			{ name: 'Chivas Royal', detail: 'x41 u.', price: 287711 },
-			{ name: 'Chivas Cristal Gold', detail: 'x44 u.', price: 77043 },
-			{ name: 'Malfy Gin', detail: 'x44 u.', price: 44440 },
-			{ name: 'Lillet', detail: 'x41 u.', price: 16441 },
-			{ name: 'Absolut Vodka', price: 19793, promo: 'Promo 5+1 · Vol: 4cj+1cj $19001' },
-			{ name: 'Jameson', price: 22440, promo: 'Promo 2+1' },
-			{ name: 'Ballantines Finest', price: 20123, promo: 'Promo 2+1' },
-			{ name: 'Chivas 12 Años', price: 35673, promo: 'Promo 2+1' },
+			{ name: 'Beefeater Dry Gin', image:'/bebidas/beefeaterDryGin.webp', price: 19569, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 23262 }] },
+			{ name: 'Blenders x750cc', image:'/bebidas/blenders.webp', detail: 'x45 u.', price: 8724 },
+			{ name: 'Cusenier Licores', image:'/bebidas/cusenierLicores.webp', detail: 'x45 u.', price: 5844, variants: [{ label: 'Café al Cognac', price: 6475 }] },
+			{ name: 'Tía María', image:'/bebidas/tiaMaria.webp', detail: 'x45 u.', price: 6929, variants: [{ label: 'Cremy', price: 9773 }] },
+			{ name: 'Buhero Negro', image:'/bebidas/buheroNegro.webp', price: 6634 },
+			{ name: 'Buhero Negro Mandelo', image:'/bebidas/buheroNegroMandelo.webp', price: 7297 },
+			{ name: 'Wyborowa Vodka', image:'/bebidas/wyborowaVodka.webp', price: 4850, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 50621 }] },
+			{ name: 'Brighton Gin', image:'/bebidas/brightonGin.webp', price: 7617, promo: 'Promo 5+1', variants: [{ label: 'Sabores', price: 8368 }] },
+			{ name: 'Malibú', image:'/bebidas/malibu.webp', price: 12517, promo: 'Promo 5+1' },
+			{ name: 'Havana Ron 3 Años', image:'/bebidas/havanaRon.webp', price: 11594, promo: 'Promo 5+1', variants: [{ label: 'Añejo Especial', price: 12378 }] },
+			{ name: 'Ramazzotti', image:'/bebidas/ramazzotti.webp', price: 6511, promo: 'Promo 5+1' },
+			{ name: 'Jameson Whisky', image:'/bebidas/jamesonWhisky.webp', detail: 'x44 u.', price: 29825, variants: [{ label: 'Black Barrel', price: 50338 }, { label: 'IPA', price: 33967 }] },
+			{ name: 'Ballantines Whisky', image:'/bebidas/ballantinesWhisky.webp', detail: 'x44 u.', price: 26924 },
+			{ name: 'Chivas 12 Años', image:'/bebidas/chivas12Anos.webp', price: 47414 },
+			{ name: 'Monkey Gin', image:'/bebidas/monkeyGin.webp', detail: 'x44 u.', price: 59195 },
+			{ name: 'The Glenlivet Reserve', image:'/bebidas/theGlenlivetReserve.webp', detail: 'x41 u.', price: 50004 },
+			{ name: 'Chivas Royal', image:'/bebidas/chivasRoyal.webp', detail: 'x41 u.', price: 287711 },
+			{ name: 'Chivas Cristal Gold', image:'/bebidas/chivasCristalGold.webp', detail: 'x44 u.', price: 77043 },
+			{ name: 'Malfy Gin', image:'/bebidas/malfyGin.webp', detail: 'x44 u.', price: 44440 },
+			{ name: 'Lillet', image:'/bebidas/lillet.webp', detail: 'x41 u.', price: 16441 },
+			{ name: 'Absolut Vodka', image:'/bebidas/absolutVodka.webp', price: 19793, promo: 'Promo 5+1 · Vol: 4cj+1cj $19001' },
+			{ name: 'Jameson', image:'/bebidas/jameson.webp', price: 22440, promo: 'Promo 2+1' },
+			{ name: 'Ballantines Finest', image:'/bebidas/ballantinesFinest.webp', price: 20123, promo: 'Promo 2+1' },
+			{ name: 'Chivas 12 Años', image:'/bebidas/chivas12Anos.webp', price: 35673, promo: 'Promo 2+1' },
 			]
 		},
 		{
-			name: 'JACK DANIEL\'S',
 			products: [
-			{ name: "Jack Daniel's Apple", detail: 'x25 u.', price: 33085, promo: 'Promo 5+1' },
+			{ name: "Jack Daniel's Apple", image:'/bebidas/jackDanielsApple.webp', detail: 'x25 u.', price: 33085, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'CASA ROSA',
 			products: [
-			{ name: 'Casa Rosa', detail: 'x40 u.', price: 6965 },
+			{ name: 'Casa Rosa', image:'/bebidas/casaRosa.webp', detail: 'x40 u.', price: 6965 },
 			]
 		},
 		{
-			name: 'FEDERAL',
 			products: [
-			{ name: 'Vermut Federal', detail: 'x25 u.', price: 10588, promo: 'Promo 5+1' },
+			{ name: 'Vermut Federal', image:'/bebidas/vermutFederal.webp', detail: 'x25 u.', price: 10588, promo: 'Promo 5+1' },
 			]
 		},
 		]
@@ -86,174 +79,146 @@ const categories = [
 		label: 'Vinos',
 		brands: [
 		{
-			name: 'AVINEA',
 			products: [
-			{ name: 'Artesano Veraprima', detail: 'x50 u.', price: 6040, promo: 'Promo 2+1' },
-			{ name: 'Argento', detail: 'x50 u.', price: 4479, promo: 'Promo 2+1' },
-			{ name: 'Cuesta del Madero', detail: 'x50 u.', price: 3806, promo: 'Promo 2+1' },
-			{ name: 'Pacheco Perera', detail: 'x50 u.', price: 4221, promo: 'Promo 2+1' },
+			{ name: 'Artesano Veraprima', image:'', detail: 'x50 u.', price: 6040, promo: 'Promo 2+1' },
+			{ name: 'Argento', image:'', detail: 'x50 u.', price: 4479, promo: 'Promo 2+1' },
+			{ name: 'Cuesta del Madero', image:'', detail: 'x50 u.', price: 3806, promo: 'Promo 2+1' },
+			{ name: 'Pacheco Perera', image:'', detail: 'x50 u.', price: 4221, promo: 'Promo 2+1' },
 			]
 		},
 		{
-			name: 'HUENTALA',
 			products: [
-			{ name: 'Zorro Salvaje', detail: 'x50 u.', price: 3450, promo: 'Promo 10+1' },
-			{ name: 'Gran Sombrero', detail: 'x50 u.', price: 10871, promo: 'Promo 10+1' },
-			{ name: 'Sombrero', detail: 'x50 u.', price: 6853, promo: 'Promo 10+1' },
-			{ name: 'La Isabel Estate', detail: 'x50 u.', price: 24580, promo: 'Promo 10+1' },
+			{ name: 'Zorro Salvaje', image:'', detail: 'x50 u.', price: 3450, promo: 'Promo 10+1' },
+			{ name: 'Gran Sombrero', image:'', detail: 'x50 u.', price: 10871, promo: 'Promo 10+1' },
+			{ name: 'Sombrero', image:'', detail: 'x50 u.', price: 6853, promo: 'Promo 10+1' },
+			{ name: 'La Isabel Estate', image:'', detail: 'x50 u.', price: 24580, promo: 'Promo 10+1' },
 			]
 		},
 		{
-			name: 'PEÑAFLOR',
 			products: [
-			{ name: 'Gran Medalla', detail: 'x50 u.', price: 24790, promo: 'Promo 5+1' },
-			{ name: 'Trapiche Rva.', detail: 'x43 u.', price: 5999 },
-			{ name: 'El Esteco', detail: 'x54 u.', price: 12421 },
-			{ name: 'La Mascota', detail: 'x54 u.', price: 9176 },
-			{ name: 'Origen', detail: 'x43 u.', price: 4532 },
-			{ name: 'Finca Las Moras', detail: 'x43 u.', price: 3108 },
-			{ name: 'Alma Mora', detail: 'x45 u.', price: 4242 },
-			{ name: 'Fond de Cave', detail: 'x43 u.', price: 5498 },
-			{ name: 'Elementos', detail: 'x43 u.', price: 3864 },
-			{ name: 'Fond de Cave Rva.', detail: 'x55 u.', price: 7388 },
-			{ name: 'Los Árboles', detail: 'x43 u.', price: 3582 },
-			{ name: 'Don David', detail: 'x43 u.', price: 5663 },
-			{ name: 'Alaris', detail: 'x43 u.', price: 3216 },
-			{ name: 'Cazador', detail: 'x43 u.', price: 3574 },
-			{ name: 'Dada', detail: 'x43 u.', price: 4222 },
+			{ name: 'Gran Medalla', image:'', detail: 'x50 u.', price: 24790, promo: 'Promo 5+1' },
+			{ name: 'Trapiche Rva.', image:'', detail: 'x43 u.', price: 5999 },
+			{ name: 'El Esteco', image:'', detail: 'x54 u.', price: 12421 },
+			{ name: 'La Mascota', image:'', detail: 'x54 u.', price: 9176 },
+			{ name: 'Origen', image:'', detail: 'x43 u.', price: 4532 },
+			{ name: 'Finca Las Moras', image:'', detail: 'x43 u.', price: 3108 },
+			{ name: 'Alma Mora', image:'', detail: 'x45 u.', price: 4242 },
+			{ name: 'Fond de Cave', image:'', detail: 'x43 u.', price: 5498 },
+			{ name: 'Elementos', image:'', detail: 'x43 u.', price: 3864 },
+			{ name: 'Fond de Cave Rva.', image:'', detail: 'x55 u.', price: 7388 },
+			{ name: 'Los Árboles', image:'', detail: 'x43 u.', price: 3582 },
+			{ name: 'Don David', image:'', detail: 'x43 u.', price: 5663 },
+			{ name: 'Alaris', image:'', detail: 'x43 u.', price: 3216 },
+			{ name: 'Cazador', image:'', detail: 'x43 u.', price: 3574 },
+			{ name: 'Dada', image:'', detail: 'x43 u.', price: 4222 },
 			]
 		},
 		{
-			name: 'SÉPTIMA',
 			products: [
-			{ name: 'Emblema', detail: 'x50 u.', price: 5103, promo: 'Promo 5+1 · Vol 3cj+1cj $4594' },
-			{ name: 'Séptima Obra', detail: 'x50 u.', price: 7156, promo: 'Promo 6+1' },
-			{ name: 'Los Pasos', detail: 'x50 u.', price: 3670, promo: 'Promo 5+1 · Vol 3cj+1cj $3303' },
+			{ name: 'Emblema', image:'', detail: 'x50 u.', price: 5103, promo: 'Promo 5+1 · Vol 3cj+1cj $4594' },
+			{ name: 'Séptima Obra', image:'', detail: 'x50 u.', price: 7156, promo: 'Promo 6+1' },
+			{ name: 'Los Pasos', image:'', detail: 'x50 u.', price: 3670, promo: 'Promo 5+1 · Vol 3cj+1cj $3303' },
 			]
 		},
 		{
-			name: 'CASARENA',
 			products: [
-			{ name: 'Estate', detail: 'x50 u.', price: 5438, promo: 'Promo 3+1' },
-			{ name: 'Single Vineyard', detail: 'x50 u.', price: 15563, promo: 'Promo 3+1' },
+			{ name: 'Estate', image:'', detail: 'x50 u.', price: 5438, promo: 'Promo 3+1' },
+			{ name: 'Single Vineyard', image:'', detail: 'x50 u.', price: 15563, promo: 'Promo 3+1' },
 			]
 		},
 		{
-			name: 'CATENA ZAPATA',
 			note: 'x33 u.',
 			products: [
-			{ name: 'Saint Felicien', price: 9436, promo: 'Promo 5+1' },
-			{ name: 'D.V. Catena', price: 12428, promo: 'Promo 5+1' },
-			{ name: 'Nicasia', price: 7398, promo: 'Promo 5+1' },
-			{ name: 'Enemigo', price: 17506, promo: 'Promo 5+1' },
-			{ name: 'Gran Enemigo', price: 38804, promo: 'Promo 5+1' },
+			{ name: 'Saint Felicien', image:'', price: 9436, promo: 'Promo 5+1' },
+			{ name: 'D.V. Catena', image:'', price: 12428, promo: 'Promo 5+1' },
+			{ name: 'Nicasia', image:'', price: 7398, promo: 'Promo 5+1' },
+			{ name: 'Enemigo', image:'', price: 17506, promo: 'Promo 5+1' },
+			{ name: 'Gran Enemigo', image:'', price: 38804, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'DOÑA PAULA',
 			note: 'x50 u.',
 			products: [
-			{ name: 'Estate', price: 5286, promo: 'Promo 5+1' },
-			{ name: 'Los Cardos', price: 3575, promo: 'Promo 5+1' },
-			{ name: 'Single Vineyard', price: 8005, promo: 'Promo 5+1' },
-			{ name: 'Altaluvia', price: 1640, promo: 'Promo 4+1' },
+			{ name: 'Estate', image:'', price: 5286, promo: 'Promo 5+1' },
+			{ name: 'Los Cardos', image:'', price: 3575, promo: 'Promo 5+1' },
+			{ name: 'Single Vineyard', image:'', price: 8005, promo: 'Promo 5+1' },
+			{ name: 'Altaluvia', image:'', price: 1640, promo: 'Promo 4+1' },
 			]
 		},
 		{
-			name: 'LUIGI BOSCA',
-			note: 'x33 u.',
 			products: [
-			{ name: 'La Linda', price: 8639, promo: 'Promo 5+1' },
-			{ name: 'Luigi Insignia', price: 14191, promo: 'Promo 5+1' },
-			{ name: 'De Sangre', price: 17225, promo: 'Promo 5+1' },
+			{ name: 'La Linda', image:'', price: 8639, promo: 'Promo 5+1' },
+			{ name: 'Luigi Insignia', image:'', price: 14191, promo: 'Promo 5+1' },
+			{ name: 'De Sangre', image:'', price: 17225, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'ETCHART',
-			note: 'x30 u.',
 			products: [
-			{ name: 'Arnaldo B.', detail: 'x40 u.', price: 24760 },
-			{ name: 'Etchart S.V.', detail: 'x40 u.', price: 12972 },
-			{ name: 'Etchart Assemblage', detail: 'x40 u.', price: 38612 },
-			{ name: 'Etchart 1992', detail: 'x40 u.', price: 44793 },
-			{ name: 'Cafayate', detail: 'x33 u.', price: 4437 },
-			{ name: 'Etchart Privado', detail: 'x33 u.', price: 4033 },
-			{ name: 'Cafayate Rva.', price: 5814, promo: 'Promo 5+1' },
+			{ name: 'Arnaldo B.', image:'', detail: 'x40 u.', price: 24760 },
+			{ name: 'Etchart S.V.', image:'', detail: 'x40 u.', price: 12972 },
+			{ name: 'Etchart Assemblage', image:'', detail: 'x40 u.', price: 38612 },
+			{ name: 'Etchart 1992', image:'', detail: 'x40 u.', price: 44793 },
+			{ name: 'Cafayate', image:'', detail: 'x33 u.', price: 4437 },
+			{ name: 'Etchart Privado', image:'', detail: 'x33 u.', price: 4033 },
+			{ name: 'Cafayate Rva.', image:'', price: 5814, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'RENACER',
-			note: 'x50 u.',
 			products: [
-			{ name: 'Punto Final', price: 4754, promo: 'Promo 5+1' },
-			{ name: 'Punto Final Reserva', price: 6889, promo: 'Promo 4+1' },
-			{ name: 'Renacer', price: 20769, promo: 'Promo 3+1' },
+			{ name: 'Punto Final', image:'', price: 4754, promo: 'Promo 5+1' },
+			{ name: 'Punto Final Reserva', image:'', price: 6889, promo: 'Promo 4+1' },
+			{ name: 'Renacer', image:'', price: 20769, promo: 'Promo 3+1' },
 			]
 		},
 		{
-			name: 'RUTINI',
-			note: 'x33 u.',
 			products: [
-			{ name: 'Rutini Cab-Mal', detail: 'x36 u.', price: 14193 },
-			{ name: 'Trumpeter', detail: 'x36 u.', price: 7287 },
+			{ name: 'Rutini Cab-Mal', image:'', detail: 'x36 u.', price: 14193 },
+			{ name: 'Trumpeter', image:'', detail: 'x36 u.', price: 7287 },
 			]
 		},
 		{
-			name: 'CRUX',
-			note: 'x50 u.',
 			products: [
-			{ name: 'Crux', price: 5013, promo: 'Promo 5+1' },
-			{ name: 'Crux Xtra', price: 10464, promo: 'Promo 5+1' },
+			{ name: 'Crux', image:'', price: 5013, promo: 'Promo 5+1' },
+			{ name: 'Crux Xtra', image:'', price: 10464, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'SALENTEIN',
-			note: 'x33 u.',
 			products: [
-			{ name: 'Portillo', detail: 'x42 u.', price: 3580, promo: 'Promo 10+1' },
-			{ name: 'Killka', detail: 'x42 u.', price: 5471 },
-			{ name: 'Salentein Rva.', detail: 'x42 u.', price: 8105 },
+			{ name: 'Portillo', image:'', detail: 'x42 u.', price: 3580, promo: 'Promo 10+1' },
+			{ name: 'Killka', image:'', detail: 'x42 u.', price: 5471 },
+			{ name: 'Salentein Rva.', image:'', detail: 'x42 u.', price: 8105 },
 			]
 		},
 		{
-			name: 'SAN HUBERTO',
-			note: 'x50 u.',
 			products: [
-			{ name: 'Clásico', price: 3064, promo: 'Promo 10+2' },
-			{ name: 'Reserva', price: 3511, promo: 'Promo 10+2' },
-			{ name: 'Ugarteche', price: 2458, promo: 'Promo 10+2' },
-			{ name: 'Gran Niña', price: 11679, promo: 'Promo 5+1' },
+			{ name: 'Clásico', image:'', price: 3064, promo: 'Promo 10+2' },
+			{ name: 'Reserva', image:'', price: 3511, promo: 'Promo 10+2' },
+			{ name: 'Ugarteche', image:'', price: 2458, promo: 'Promo 10+2' },
+			{ name: 'Gran Niña', image:'', price: 11679, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'ATAMISQUE',
-			note: 'x50 u.',
 			products: [
-			{ name: 'Atamisque', price: 26400, promo: 'Promo 4+1' },
-			{ name: 'Catalpa', detail: 'x40 u.', price: 11500, promo: 'Promo 5+1' },
-			{ name: 'Serbal', detail: 'x40 u.', price: 6900, promo: 'Promo 5+1' },
+			{ name: 'Atamisque', image:'', price: 26400, promo: 'Promo 4+1' },
+			{ name: 'Catalpa', image:'', detail: 'x40 u.', price: 11500, promo: 'Promo 5+1' },
+			{ name: 'Serbal', image:'', detail: 'x40 u.', price: 6900, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'LA RURAL',
 			products: [
-			{ name: 'San Felipe Varietales', detail: 'x36 u.', price: 4435 },
+			{ name: 'San Felipe Varietales', image:'', detail: 'x36 u.', price: 4435 },
 			]
 		},
 		{
-			name: 'CORDERO CON PIEL DE LOBO',
-			note: 'x33 u.',
 			products: [
-			{ name: 'Cordero con Piel de Lobo', price: 3655, promo: 'Promo 10+1' },
+			{ name: 'Cordero con Piel de Lobo', image:'', price: 3655, promo: 'Promo 10+1' },
 			]
 		},
 		{
-			name: 'VISTALVA',
-			note: 'x40 u.',
 			products: [
-			{ name: 'Mundo Chiquito', price: 4091, promo: 'Promo 10+1' },
-			{ name: 'Tomero', price: 6819, promo: 'Promo 10+1' },
-			{ name: 'Pixel', detail: 'x50 u.', price: 2703, promo: 'Promo 5+1' },
+			{ name: 'Mundo Chiquito', image:'', price: 4091, promo: 'Promo 10+1' },
+			{ name: 'Tomero', image:'', price: 6819, promo: 'Promo 10+1' },
+			{ name: 'Pixel', image:'', detail: 'x50 u.', price: 2703, promo: 'Promo 5+1' },
 			]
 		},
 		]
@@ -263,44 +228,37 @@ const categories = [
 		label: 'Espumantes',
 		brands: [
 		{
-			name: 'CHANDON',
-			note: 'x20 u.',
 			products: [
-			{ name: 'Latitud', price: 4585, promo: 'Promo 4+1' },
-			{ name: 'Terraza de los Andes', price: 10924, promo: 'Promo 4+1' },
-			{ name: 'Mercier', price: 6160, promo: 'Promo 5+1' },
-			{ name: 'Latitud 33 Espumante', price: 6420, promo: 'Promo 5+1' },
-			{ name: 'Altos del Plata', price: 7672, promo: 'Promo 4+1' },
+			{ name: 'Latitud', image:'', price: 4585, promo: 'Promo 4+1' },
+			{ name: 'Terraza de los Andes', image:'', price: 10924, promo: 'Promo 4+1' },
+			{ name: 'Mercier', image:'', price: 6160, promo: 'Promo 5+1' },
+			{ name: 'Latitud 33 Espumante', image:'', price: 6420, promo: 'Promo 5+1' },
+			{ name: 'Altos del Plata', image:'', price: 7672, promo: 'Promo 4+1' },
 			]
 		},
 		{
-			name: 'SÉPTIMA',
 			products: [
-			{ name: 'María Codorniu', detail: 'x50 u.', price: 7414, promo: 'Promo 5+1' },
+			{ name: 'María Codorniu', image:'', detail: 'x50 u.', price: 7414, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'PEÑAFLOR',
 			products: [
-			{ name: 'San Telmo Espumante', detail: 'x42 u.', price: 4152 },
+			{ name: 'San Telmo Espumante', image:'', detail: 'x42 u.', price: 4152 },
 			]
 		},
 		{
-			name: 'SALENTEIN',
 			products: [
-			{ name: 'Extra Brut', price: 8714, promo: 'Promo 5+1' },
+			{ name: 'Extra Brut', image:'', price: 8714, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'SAN HUBERTO',
 			products: [
-			{ name: 'Niña Extra Brut', detail: 'x50 u.', price: 9733, promo: 'Promo 5+1' },
+			{ name: 'Niña Extra Brut', image:'', detail: 'x50 u.', price: 9733, promo: 'Promo 5+1' },
 			]
 		},
 		{
-			name: 'RENACER',
 			products: [
-			{ name: 'Punto Final Espumante', detail: 'x50 u.', price: 5193, promo: 'Promo 4+1' },
+			{ name: 'Punto Final Espumante', image:'', detail: 'x50 u.', price: 5193, promo: 'Promo 4+1' },
 			]
 		},
 		]
@@ -310,15 +268,13 @@ const categories = [
 		label: 'Vermut',
 		brands: [
 		{
-			name: 'SÉPTIMA',
 			products: [
-			{ name: 'Desconfiado Vermut', detail: 'x50 u.', price: 10384, promo: 'Promo 3+1' },
+			{ name: 'Desconfiado Vermut', image:'', detail: 'x50 u.', price: 10384, promo: 'Promo 3+1' },
 			]
 		},
 		{
-			name: 'FEDERAL',
 			products: [
-			{ name: 'Vermut Federal', detail: 'x25 u.', price: 10588, promo: 'Promo 5+1' },
+			{ name: 'Vermut Federal', image:'', detail: 'x25 u.', price: 10588, promo: 'Promo 5+1' },
 			]
 		},
 		]
@@ -328,12 +284,11 @@ const categories = [
 		label: 'Económicos',
 		brands: [
 		{
-			name: 'VARIOS',
 			products: [
-			{ name: 'Dilema', detail: 'x50 u.', price: 2687, promo: 'Promo 4+1' },
-			{ name: 'Estancia Mendoza', detail: 'x50 u.', price: 2834, promo: 'Promo 4+1' },
-			{ name: 'Finca Magnolia', detail: 'x50 u.', price: 2778, promo: 'Promo 4+1' },
-			{ name: 'Pixel', detail: 'x50 u.', price: 2703, promo: 'Promo 5+1' },
+			{ name: 'Dilema', image:'', detail: 'x50 u.', price: 2687, promo: 'Promo 4+1' },
+			{ name: 'Estancia Mendoza', image:'', detail: 'x50 u.', price: 2834, promo: 'Promo 4+1' },
+			{ name: 'Finca Magnolia', image:'', detail: 'x50 u.', price: 2778, promo: 'Promo 4+1' },
+			{ name: 'Pixel', image:'', detail: 'x50 u.', price: 2703, promo: 'Promo 5+1' },
 			]
 		},
 		]
@@ -341,7 +296,7 @@ const categories = [
 ];
 ---
 
-<Layout title="Catálogo de Bebidas">
+<Layout title="Catálogo Grand Bar - Mayorista de Bebidas">
 	<main>
 		<!-- Hero -->
 		<header class="hero">
