@@ -1,0 +1,88 @@
+---
+interface Props {
+    categories: { id: string; label: string }[];
+}
+const { categories } = Astro.props;
+---
+
+<nav class="filter-bar" id="filter-bar">
+    <div class="filter-inner flex justify-center">
+        <button class="filter-btn active" data-target="all">Todos</button>
+        {categories.map(cat => (
+        <button class="filter-btn" data-target={cat.id}>{cat.label}</button>
+        ))}
+    </div>
+</nav>
+
+<style>
+    .filter-bar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #0d0d0d;
+        border-bottom: 1px solid #2a2a2a;
+        padding: 0 1.5rem;
+    }
+    .filter-inner {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        gap: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .filter-inner::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'DM Mono', 'Courier New', monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #666;
+        padding: 1rem 1.25rem;
+        white-space: nowrap;
+        border-bottom: 2px solid transparent;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .filter-btn:hover {
+        color: #f5f0e8;
+    }
+    .filter-btn.active {
+        color: #a0956e;
+        border-bottom-color: #a0956e;
+    }
+</style>
+
+<script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const sections = document.querySelectorAll<HTMLElement>('.catalog-section');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const target = btn.dataset.target;
+        sections.forEach(sec => {
+            if (target === 'all' || sec.dataset.category === target) {
+            sec.style.display = '';
+            } else {
+            sec.style.display = 'none';
+            }
+        });
+
+        // Scroll to first visible section
+        if (target !== 'all') {
+            const active = document.querySelector<HTMLElement>(`.catalog-section[data-category="${target}"]`);
+            if (active) {
+            const offset = document.getElementById('filter-bar')?.offsetHeight ?? 0;
+            const top = active.getBoundingClientRect().top + window.scrollY - offset - 16;
+            window.scrollTo({ top, behavior: 'smooth' });
+            }
+        }
+        });
+    });
+</script>
