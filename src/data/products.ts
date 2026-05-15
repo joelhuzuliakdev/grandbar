@@ -85,10 +85,10 @@ export const products: Product[] = [
     { id: 'gran-enemigo', name: 'Gran Enemigo', brand: 'Catena Zapata', category: 'Vinos', price: 38804, promo: '5+1', image: '/bebidas/granEnemigo.webp' },
     // CHANDON
     { id: 'latitud', name: 'Latitud', brand: 'Chandon', category: 'Espumante', price: 4585, promo: '4+1', image: '/bebidas/latitud.webp' },
-    { id: 'terraza-andes', name: 'Terraza de Los Andes', brand: 'Chandon', category: 'Espumante', price: 10924, promo: '4+1', image: '/bebidas/terrazaDeLosAndes.webp' },
+    { id: 'terraza-andes', name: 'Terraza de Los Andes', brand: 'Chandon', category: 'Espumante', price: 10924, promo: '4+1', image: '/bebidas/terrazaDeLosAndesEspumante.webp' },
     { id: 'mercier', name: 'Mercier', brand: 'Chandon', category: 'Espumante', price: 6160, promo: '5+1', image: '/bebidas/mercier.webp' },
     { id: 'latitud-33', name: 'Latitud 33 Espumante', brand: 'Chandon', category: 'Espumante', price: 6420, promo: '5+1', image: '/bebidas/latitud33Espumante.webp' },
-    { id: 'altos-del-plata', name: 'Altos del Plata', brand: 'Chandon', category: 'Espumante', price: 7672, promo: '4+1', image: '/bebidas/altosDelPlata.webp' },
+    { id: 'altos-del-plata', name: 'Altos del Plata', brand: 'Chandon', category: 'Espumante', price: 7672, promo: '4+1', image: '/bebidas/altosDelPlataEspumante.webp' },
     // SEPTIMA
     { id: 'emblema', name: 'Emblema', brand: 'Séptima', category: 'Vinos', price: 5103, promo: '5+1', image: '/bebidas/emblema.webp' },
     { id: 'maria-codorniu', name: 'Maria Codorniu', brand: 'Séptima', category: 'Espumante', price: 7414, promo: '5+1', image: '/bebidas/maria-codorniu.webp' },
